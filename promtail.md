@@ -40,3 +40,18 @@ scrape_configs:
       __path__: /opt/*.log                       ## (OUTPUT PATH FILE (PWD))
       logtype: application
 ```
+
+## 3. Run Promtail as a Background Service
+```SH
+sudo nano /etc/systemd/system/promtail.service
+[Unit]
+Description=Promtail Log Collector
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/promtail -config.file=/root/promtail-config.yml          (PATH OF PROMTAIL)
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
