@@ -1,5 +1,8 @@
-#Add Grafana Repository
-  sudo vi /etc/yum.repos.d/grafana.repo
+## 1.Add Grafana Repository
+
+```sh  
+sudo vi /etc/yum.repos.d/grafana.repo
+```
 
 #Paste this inside
         [grafana]
