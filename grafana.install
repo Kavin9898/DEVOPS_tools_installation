@@ -1,6 +1,8 @@
+```int
+[unit]
 ## 1.Add Grafana Repository
 
-```sh  
+ 
 sudo vi /etc/yum.repos.d/grafana.repo
 ```
 
