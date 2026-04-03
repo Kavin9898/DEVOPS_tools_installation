@@ -1,5 +1,5 @@
 ## Step 2: Install Java
-```ssh 
+```sh 
 sudo yum update -y
 sudo yum install java-17-amazon-corretto -y
 ```
