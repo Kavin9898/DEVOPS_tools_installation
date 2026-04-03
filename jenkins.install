@@ -1,8 +1,20 @@
-sudo apt update
-sudo apt install openjdk-11-jdk -y
-wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
-sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-sudo apt update
-sudo apt install jenkins -y
+## Step 2: Install Java
+```ssh 
+sudo yum update -y
+sudo yum install java-17-amazon-corretto -y
+```
+✅ Verify:
+java -version
+ Step 3: Install Jenkins
+sudo wget -O /etc/yum.repos.d/jenkins.repo \ https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+sudo yum install jenkins -y
+▶️ Step 4: Start Jenkins
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
+Check:
+sudo systemctl status jenkins
+Step 6: Access Jenkins
+http://<EC2-Public-IP>:8080
+ Step 7: Get Admin Password
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
