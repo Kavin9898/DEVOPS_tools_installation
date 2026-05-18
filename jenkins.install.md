@@ -1,6 +1,8 @@
 ## Step 2: Install Java
 ```sh 
 sudo yum update -y
+```
+```sh
 sudo yum install java-17-amazon-corretto -y
 ```
 ## Verify:
