@@ -7,16 +7,14 @@ sudo yum update -y
 ## Step 3️⃣ Install Java 21 (Required)
 ```sh
 ⚠️ New Jenkins versions require Java 21.
-
-Install:
+```sh
 
 sudo yum install java-21-amazon-corretto -y
-
+```
 Verify:
 ```sh
 java -version
 ```
-Expected:openjdk version "21"
 ## Step 4️⃣ Add Jenkins Repository
 ```sh
 sudo wget -O /etc/yum.repos.d/jenkins.repo \
