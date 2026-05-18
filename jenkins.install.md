@@ -1,14 +1,13 @@
 ## Step 1️⃣ Connect to EC2
+```sh
 ssh -i your-key.pem ec2-user@<EC2-Public-IP>
-
+```
 ## Step 2️⃣ Update Server
+```sh
 sudo yum update -y
-
+```
 ## Step 3️⃣ Install Java 21 (Required)
 ```sh
-⚠️ New Jenkins versions require Java 21.
-```sh
-
 sudo yum install java-21-amazon-corretto -y
 ```
 Verify:
