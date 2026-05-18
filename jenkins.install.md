@@ -32,7 +32,7 @@ Verify:
 rpm -qa | grep jenkins
 ```
 ## Step 6️⃣ Configure Jenkins to Use Java 21
-```
+
 This is the fix for your error.
 ```sh
 sudo systemctl edit jenkins
