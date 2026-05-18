@@ -3,7 +3,7 @@
 sudo yum update -y
 ```
 ```sh
-sudo yum install java-17-amazon-corretto -y
+sudo yum install java-21-amazon-corretto -y
 ```
 ## Verify:
 ```sh
